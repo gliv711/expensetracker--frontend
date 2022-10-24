@@ -1,14 +1,18 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import {HttpClientModule} from '@angular/common/http';
 import { AppComponent } from './app.component';
+import { ListExpensesComponent } from './Components/list-expenses/list-expenses.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ListExpensesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
